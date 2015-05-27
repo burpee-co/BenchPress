@@ -19,6 +19,6 @@ gulp.task('jshint', function() {
 });
 
 gulp.task('watch', function() {
-	gulp.watch('styles/*.scss', ['styles']);
+	gulp.watch('sass/*.scss', ['styles']);
 	gulp.watch('js/*.js', ['jshint']);
 });

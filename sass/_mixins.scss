@@ -1,0 +1,40 @@
+@mixin fontStyle($fontSize,$fontColor,$fontWeight) {
+	font-size: $fontSize;
+	color: $fontColor;
+	font-weight: $fontWeight;
+}
+
+
+@mixin flexChild($grow,$shrink,$basis) {
+	-webkit-flex: $grow $shrink $basis;
+	-moz-flex: $grow $shrink $basis;
+	-ms-flex: $grow $shrink $basis;
+	-o-flex: $grow $shrink $basis;
+	flex: $grow $shrink $basis;
+}
+
+@mixin flexMom($direction,$wraps) {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	-webkit-flex-flow: $direction $wraps;
+	-moz-flex-flow: $direction $wraps;
+	-ms-flex-flow: $direction $wraps;
+	-o-flex-flow: $direction $wraps;
+	flex-flow: $direction $wraps;
+}
+
+@mixin flexAlign($justify,$align) {
+		-webkit-justify-content: $justify;
+		-moz-justify-content: $justify;
+		-ms-justify-content: $justify;
+		-o-justify-content: $justify;
+		justify-content: $justify;
+		-webkit-align-items: $align;
+		-moz-align-items: $align;
+		-ms-align-items: $align;
+		-o-align-items: $align;
+		align-items: $align;
+}
