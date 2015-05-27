@@ -4,7 +4,27 @@ Navigation
 ===============================
 */
 
+header.mainHeader {
+	width: 100%;
+	@include flexMom(row,wrap);
+	@include flexAlign(space-between,center);
+	background: rgba(0,0,0,0.7);
+	position: fixed;
+	margin: 0 auto;
+	padding: 5px 20px;
+}
+
+header.mainHeader h1 {
+	flex:1 0 40%;
+	margin: 0 auto;
+	padding: 0px 20px;
+	line-height: 60px;
+}
+
 ul.menu {
+	flex: 1 0 auto;
+	@include flexMom(row,wrap);
+	@include flexAlign(flex-end,center);
 	margin: 0;
 	padding: 0;
 	li {
@@ -13,7 +33,6 @@ ul.menu {
 		a {
 			color: #333;
 			padding: 10px;
-			background: #333;
 			color: white;
 		}
 	}

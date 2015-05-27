@@ -10,11 +10,13 @@
 @import 'normalize';
 @import '_variables';
 @import '_mixins';
-@import '_navigation';
+
 @import '_comments.scss';
 @import '_sidebar.scss';
 @import '_footer.scss';
 @import '_header.scss';
+@import '_typography.scss';
+@import '_navigation';
 
 /*
 ====================================
@@ -65,8 +67,12 @@ body {
 	background-color: $white;
 }
 
+.main {
+	padding-top: 320px;
+}
+
 .container {
-	max-width: 1200px;
+	// max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -80,69 +86,4 @@ body {
 	width: 100%;
 }
 
-/* links */
-
-a {
-	color: $green;
-	text-decoration: none;
-	transition: all 0.5s;
-	&:hover {
-		color: $lime;
-	}
-}
-
-/* paragraphs */
-
-p {
-	line-height: 1.5;
-}
-
-/*blockquotes*/
-
-blockquote {
-	background: #F7F7F7;
-	margin: 0;
-	padding: 20px;
-	p {
-		margin-top: 0;
-	}
-}
-
-/*tables*/
-
-table {
-	td {
-		padding: 10px;
-	}
-	tr td:first {
-		padding-right: 0;
-	}
-}
-
-/*def lists*/
-
-dt {
-	font-weight: 600;
-	padding-bottom: 5px;
-}
-
-dd {
-	padding: 10px;
-	margin-left: 10px;
-}
-
-/*lists*/
-
-ul li, ol li {
-	padding: 3px;
-}
-
-/*PRE*/
-
-pre {
-	background: #F7F7F7;
-	padding: 10px;
-	border-radius: 4px;
-	border: 1px solid #ccc;
-}
 
