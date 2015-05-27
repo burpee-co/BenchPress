@@ -1,9 +1,9 @@
 /*
 * Theme Name: BenchPress
 * Theme URI: http://hackeryou.com;
-* Description: Starter theme for building any website. Created by HackerYou. * Rename this to your own theme page.
+* Description: A Wordpress theme for the health industry.
 * Version: 1.0
-* Author: HackerYou
+* Author: Burpee Co. 
 * Author URI: http://hackeryou.com
 */
 /*
@@ -141,124 +141,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   visibility: hidden;
   display: block;
   height: 0;
-  clear: both; }
-
-/*
-====================================
-Global Classes / Wordpress Specific
-====================================
-*/
-.aligncenter {
-  text-align: center;
-  margin: 0 auto; }
-
-.alignleft {
-  float: left; }
-
-.alignright {
-  float: right; }
-
-img.alignleft {
-  padding-right: 5px; }
-
-img.alignright {
-  padding-left: 5px; }
-
-.clear {
-  width: 100%;
-  float: left;
-  clear: both; }
-
-/*
-====================================
-Default Styling
-====================================
-*/
-img {
-  max-width: 100%; }
-
-body {
-  color: #333;
-  background-color: white; }
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto; }
-
-.content {
-  float: left;
-  width: 65%;
-  margin-right: 5%; }
-
-.full {
-  width: 100%; }
-
-/* links */
-a {
-  color: #BA209B;
-  text-decoration: none; }
-  a:hover {
-    color: #D424B1; }
-
-/* paragraphs */
-p {
-  line-height: 1.5; }
-
-/*blockquotes*/
-blockquote {
-  background: #F7F7F7;
-  margin: 0;
-  padding: 20px; }
-  blockquote p {
-    margin-top: 0; }
-
-/*tables*/
-table td {
-  padding: 10px; }
-
-table tr td:first {
-  padding-right: 0; }
-
-/*def lists*/
-dt {
-  font-weight: 600;
-  padding-bottom: 5px; }
-
-dd {
-  padding: 10px;
-  margin-left: 10px; }
-
-/*lists*/
-ul li, ol li {
-  padding: 3px; }
-
-/*PRE*/
-pre {
-  background: #F7F7F7;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc; }
-
-/*
-===============================
-Sidebar
-===============================
-*/
-.sidebar {
-  width: 30%;
-  float: left; }
-  .sidebar ul {
-    margin: 0;
-    padding: 0; }
-    .sidebar ul li {
-      list-style: none; }
-
-/*
-===============================
-Footer
-===============================
-*/
-footer {
   clear: both; }
 
 /*
@@ -460,3 +342,130 @@ p.form-allowed-tags, .nocomments {
 
 #respond p, #comments-list ul #respond {
   margin: 0; }
+
+/*
+===============================
+Sidebar
+===============================
+*/
+.sidebar {
+  width: 30%;
+  float: left; }
+  .sidebar ul {
+    margin: 0;
+    padding: 0; }
+    .sidebar ul li {
+      list-style: none; }
+
+/*
+===============================
+Footer
+===============================
+*/
+footer {
+  clear: both; }
+
+/*
+===============================
+Header - not nav
+===============================
+*/
+footer {
+  clear: both; }
+
+/*
+====================================
+Global Classes / Wordpress Specific
+====================================
+*/
+.aligncenter {
+  text-align: center;
+  margin: 0 auto; }
+
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
+img.alignleft {
+  padding-right: 5px; }
+
+img.alignright {
+  padding-left: 5px; }
+
+.clear {
+  width: 100%;
+  float: left;
+  clear: both; }
+
+/*
+====================================
+Default Styling
+====================================
+*/
+img {
+  max-width: 100%; }
+
+body {
+  color: #333;
+  background-color: white; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.content {
+  float: left;
+  width: 65%;
+  margin-right: 5%; }
+
+.full {
+  width: 100%; }
+
+/* links */
+a {
+  color: #0ca948;
+  text-decoration: none;
+  transition: all 0.5s; }
+  a:hover {
+    color: #8ac249; }
+
+/* paragraphs */
+p {
+  line-height: 1.5; }
+
+/*blockquotes*/
+blockquote {
+  background: #F7F7F7;
+  margin: 0;
+  padding: 20px; }
+  blockquote p {
+    margin-top: 0; }
+
+/*tables*/
+table td {
+  padding: 10px; }
+
+table tr td:first {
+  padding-right: 0; }
+
+/*def lists*/
+dt {
+  font-weight: 600;
+  padding-bottom: 5px; }
+
+dd {
+  padding: 10px;
+  margin-left: 10px; }
+
+/*lists*/
+ul li, ol li {
+  padding: 3px; }
+
+/*PRE*/
+pre {
+  background: #F7F7F7;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc; }
