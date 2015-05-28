@@ -10,7 +10,7 @@
 @import 'normalize';
 @import '_variables';
 @import '_mixins';
-
+@import '_about.scss';
 @import '_comments.scss';
 @import '_sidebar.scss';
 @import '_footer.scss';
@@ -68,11 +68,11 @@ body {
 }
 
 .main {
-	padding-top: 320px;
+	padding-top: 90px;
 }
 
 .container {
-	// max-width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
