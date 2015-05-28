@@ -143,6 +143,22 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 0;
   clear: both; }
 
+.aboutContainer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .aboutContainer img {
+    border-radius: 5px; }
+  .aboutContainer p img {
+    width: 100%; }
+
 /*
 ===============================
 Home
@@ -609,8 +625,12 @@ body {
   background-color: white; }
 
 .main {
+<<<<<<< HEAD
+  padding-top: 90px; }
+=======
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   outline: 20px solid rgba(0, 0, 0, 0.2); }
+>>>>>>> 0d77578c835b0021520c8939c2f3eeb28159ed64
 
 .container {
   max-width: 1200px;
