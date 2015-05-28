@@ -1,7 +1,7 @@
 <?php
 
 /*
-	Template Name: Full Page, No Sidebar
+	Template Name: Contact Page
 */
 
 get_header();  ?>
