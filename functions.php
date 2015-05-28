@@ -165,6 +165,24 @@ function hackeryou_widgets_init() {
 		'after_title' => '</h3>',
 	) );
 
+	register_sidebar( array(
+		'name' => 'Footer Widget Area',
+		'id' => 'footer-widget-area',
+		'description' => 'The footer widget area',
+		'before_widget' => '<div id="%1$s" class="footer-widget-container %2$s">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3 class="footer-widget-title">',
+		'after_title' => '</h3>',
+	) );
+
+	register_sidebar( array(
+		'name' => 'Home Widget Area',
+		'id' => 'home-widget-area',
+		'description' => 'The home page widget area',
+		'before_widget' => '<div id="%1$s" class="home-widget-container %2$s">',
+		'after_widget' => '</div>',
+	) );
+
 }
 
 add_action( 'widgets_init', 'hackeryou_widgets_init' );
