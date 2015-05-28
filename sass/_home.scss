@@ -4,6 +4,14 @@ Home
 ===============================
 */
 
+.mainHome {
+	.half-hero{
+		height:50vh;
+		background-image: url(images/stretch1.jpg);
+		background-attachment: fixed;
+	}
+}
+
 .hero {
 	@include flexMom(row, wrap);
 	width:100%;
@@ -11,6 +19,7 @@ Home
 	background-image: url(images/kettlebell2.jpg);
 	-webkit-background-size: cover;
 	background-size: cover;
+	background-attachment: fixed;
 	.overlay {
 		padding:50px;
 		text-align: center;
@@ -37,14 +46,31 @@ Home
 }
 
 .homeWidgets{
-	background-color: $green;
+	background-color: rgba(0,0,0,0.2);
+	padding:20px;
+	// outline:$outline;
+	
+	// box-shadow: $shadow;
 	.container {
 	@include flexMom(row,wrap);
-	@include flexAlign(center,center);
+	@include flexAlign(center,flex-start);
 	.home-widget-container {
 		width:100%;
-		background-color: $white;
+		// background-color: $white;
 		flex: 1 0 350px;
+		margin-right:20px;
+		padding:20px;
+		// border-right:1px solid white;
+		color:$dg;
+		h2 {
+			// color:$lime;
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-right:0px;
+			border-right:none;
+		}
 	}
 	}
 }

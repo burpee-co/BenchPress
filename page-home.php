@@ -6,7 +6,7 @@
 
 get_header();  ?>
 
-<div class="main">
+<div class="main mainHome">
 
 
 		<div class="hero">
@@ -32,6 +32,9 @@ get_header();  ?>
 	  	<div class="container">
 	  		<?php dynamic_sidebar('home-widget-area'); ?>
 	  	</div>
+	  </div>
+
+	  <div class="half-hero">
 	  </div>
 
 </div> <!-- /.main -->

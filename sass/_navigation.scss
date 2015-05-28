@@ -14,6 +14,7 @@ header.mainHeader {
 	padding: 5px 20px;
 	box-shadow:$shadow;
 	outline: $outline;
+	z-index:10000;
 }
 
 header.mainHeader h1 {
