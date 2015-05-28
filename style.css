@@ -439,6 +439,15 @@ footer {
   -ms-flex-flow: row wrap;
   -o-flex-flow: row wrap;
   flex-flow: row wrap; }
+  .aboutContainer h3 {
+    font-size: 35px; }
+
+.aboutImages {
+  background: tomato;
+  display: flex; }
+  .aboutImages img {
+    max-width: 100%;
+    display: block; }
 
 .halfHeroAbout {
   display: -webkit-flex;
@@ -455,6 +464,7 @@ footer {
   height: 80vh;
   background-size: cover;
   background-image: url(images/circuit1.jpg);
+  background-attachment: fixed;
   overflow: hidden; }
   .halfHeroAbout .overlay {
     padding: 30px;
