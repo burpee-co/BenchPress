@@ -143,28 +143,13 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   height: 0;
   clear: both; }
 
-.aboutContainer {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -moz-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  -o-flex-flow: row wrap;
-  flex-flow: row wrap; }
-  .aboutContainer img {
-    border-radius: 5px; }
-  .aboutContainer p img {
-    width: 100%; }
-
 /*
 ===============================
-Home
+Navigation
 ===============================
 */
-.hero {
+header.mainHeader {
+  width: 100%;
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -175,59 +160,60 @@ Home
   -ms-flex-flow: row wrap;
   -o-flex-flow: row wrap;
   flex-flow: row wrap;
-  width: 100%;
-  height: 100vh;
-  background-image: url(images/kettlebell2.jpg);
-  -webkit-background-size: cover;
-  background-size: cover; }
-  .hero .overlay {
-    padding: 50px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.8);
-    margin: auto;
-    max-width: 700px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    outline: 20px solid rgba(0, 0, 0, 0.2); }
-    .hero .overlay h1 {
-      font-size: 80px;
-      color: white;
-      font-weight: 700;
-      margin: 10px; }
-    .hero .overlay h2 {
-      font-family: "Raleway", Helvetica, Arial, sans-serif;
-      margin: 10px;
-      font-size: 40px;
-      color: #0ca948;
-      font-weight: 400;
-      text-transform: capitalize; }
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -o-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  margin: 0 auto;
+  padding: 5px 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  outline: 20px solid rgba(0, 0, 0, 0.2); }
 
-.homeWidgets {
-  background-color: #0ca948; }
-  .homeWidgets .container {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    -moz-flex-flow: row wrap;
-    -ms-flex-flow: row wrap;
-    -o-flex-flow: row wrap;
-    flex-flow: row wrap;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center; }
-    .homeWidgets .container .home-widget-container {
-      width: 100%;
-      background-color: white;
-      flex: 1 0 350px; }
+header.mainHeader h1 {
+  flex: 1 0 40%;
+  margin: 0 auto;
+  padding: 0px 20px;
+  line-height: 60px; }
+
+ul.menu {
+  flex: 1 0 auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  -o-justify-content: flex-end;
+  justify-content: flex-end;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
+  margin: 0;
+  padding: 0; }
+  ul.menu li {
+    display: inline;
+    margin-right: 10px; }
+    ul.menu li a {
+      color: #333;
+      padding: 10px;
+      color: white; }
 
 /*
 ===============================
@@ -442,149 +428,128 @@ Header - not nav
 footer {
   clear: both; }
 
-body {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  color: #212121;
-  font-weight: 300; }
+.aboutContainer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap; }
+  .aboutContainer img {
+    border-radius: 5px; }
+  .aboutContainer p img {
+    width: 100%; }
 
-h1 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 40px;
-  color: #0ca948;
-  font-weight: 700;
-  text-transform: uppercase; }
-
-h2 {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
-  font-size: 35px;
-  color: #0ca948;
-  font-weight: 500;
-  text-transform: uppercase; }
-
-h3 {
-  font-family: "Raleway", Helvetica, Arial, sans-serif;
-  font-size: 35px;
-  color: rgba(0, 0, 0, 0.2);
-  font-weight: 500;
-  text-transform: uppercase; }
-
-/* links */
-a {
-  color: #0ca948;
-  text-decoration: none;
-  transition: all 0.5s; }
-
-/* paragraphs */
-p {
-  line-height: 1.5; }
-
-/*blockquotes*/
-blockquote {
-  background: #F7F7F7;
-  margin: 0;
-  padding: 20px; }
-  blockquote p {
-    margin-top: 0; }
-
-/*tables*/
-table td {
-  padding: 10px; }
-
-table tr td:first {
-  padding-right: 0; }
-
-/*def lists*/
-dt {
-  font-weight: 600;
-  padding-bottom: 5px; }
-
-dd {
-  padding: 10px;
-  margin-left: 10px; }
-
-/*lists*/
-ul li, ol li {
-  padding: 3px; }
-
-/*PRE*/
-pre {
-  background: #F7F7F7;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid #ccc; }
+.half-hero {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/kettlebell2.jpg);
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .half-hero .overlay {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    max-width: 700px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    outline: 20px solid rgba(0, 0, 0, 0.2); }
+    .half-hero .overlay h1 {
+      font-size: 80px;
+      color: white;
+      font-weight: 700;
+      margin: 10px; }
+    .half-hero .overlay h2 {
+      font-family: "Raleway", Helvetica, Arial, sans-serif;
+      margin: 10px;
+      font-size: 40px;
+      color: #0ca948;
+      font-weight: 400;
+      text-transform: capitalize; }
 
 /*
 ===============================
-Navigation
+Home
 ===============================
 */
-header.mainHeader {
+.hero {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap;
   width: 100%;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -moz-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  -o-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: space-between;
-  -moz-justify-content: space-between;
-  -ms-justify-content: space-between;
-  -o-justify-content: space-between;
-  justify-content: space-between;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  margin: 0 auto;
-  padding: 5px 20px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  outline: 20px solid rgba(0, 0, 0, 0.2); }
+  height: 100vh;
+  background-image: url(images/kettlebell2.jpg);
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .hero .overlay {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: auto;
+    max-width: 700px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    outline: 20px solid rgba(0, 0, 0, 0.2); }
+    .hero .overlay h1 {
+      font-size: 80px;
+      color: white;
+      font-weight: 700;
+      margin: 10px; }
+    .hero .overlay h2 {
+      font-family: "Raleway", Helvetica, Arial, sans-serif;
+      margin: 10px;
+      font-size: 40px;
+      color: #0ca948;
+      font-weight: 400;
+      text-transform: capitalize; }
 
-header.mainHeader h1 {
-  flex: 1 0 40%;
-  margin: 0 auto;
-  padding: 0px 20px;
-  line-height: 60px; }
-
-ul.menu {
-  flex: 1 0 auto;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  -moz-flex-flow: row wrap;
-  -ms-flex-flow: row wrap;
-  -o-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: flex-end;
-  -moz-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  -o-justify-content: flex-end;
-  justify-content: flex-end;
-  -webkit-align-items: center;
-  -moz-align-items: center;
-  -ms-align-items: center;
-  -o-align-items: center;
-  align-items: center;
-  margin: 0;
-  padding: 0; }
-  ul.menu li {
-    display: inline;
-    margin-right: 10px; }
-    ul.menu li a {
-      color: #333;
-      padding: 10px;
-      color: white; }
+.homeWidgets {
+  background-color: #0ca948; }
+  .homeWidgets .container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center; }
+    .homeWidgets .container .home-widget-container {
+      width: 100%;
+      background-color: white;
+      flex: 1 0 350px; }
 
 /*
 ====================================
@@ -624,14 +589,6 @@ body {
   color: #333;
   background-color: white; }
 
-.main {
-<<<<<<< HEAD
-  padding-top: 90px; }
-=======
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  outline: 20px solid rgba(0, 0, 0, 0.2); }
->>>>>>> 0d77578c835b0021520c8939c2f3eeb28159ed64
-
 .container {
   max-width: 1200px;
   margin: 0 auto; }
@@ -643,3 +600,50 @@ body {
 
 .full {
   width: 100%; }
+
+/* links */
+a {
+  color: #0ca948;
+  text-decoration: none;
+  transition: all 0.5s; }
+  a:hover {
+    color: #8ac249; }
+
+/* paragraphs */
+p {
+  line-height: 1.5; }
+
+/*blockquotes*/
+blockquote {
+  background: #F7F7F7;
+  margin: 0;
+  padding: 20px; }
+  blockquote p {
+    margin-top: 0; }
+
+/*tables*/
+table td {
+  padding: 10px; }
+
+table tr td:first {
+  padding-right: 0; }
+
+/*def lists*/
+dt {
+  font-weight: 600;
+  padding-bottom: 5px; }
+
+dd {
+  padding: 10px;
+  margin-left: 10px; }
+
+/*lists*/
+ul li, ol li {
+  padding: 3px; }
+
+/*PRE*/
+pre {
+  background: #F7F7F7;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc; }
