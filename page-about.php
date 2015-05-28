@@ -7,13 +7,19 @@
   get_header();  ?>
 
   <div class="main">
-    <div class="half-hero">
+    <div class="half-hero halfHeroAbout">
        <div class="overlay">
-           <h1><?php echo get_bloginfo ('title') ?></h1>
-           <h2><?php echo get_bloginfo ('description'); ?></h2>
+           <h2>
+             <?php global $current_user;
+                  get_currentuserinfo();
+                  echo $current_user->user_firstname . "\n";
+                  echo $current_user->user_lastname . "\n";
+              ?> 
+           </h2>
+           <h3><?php the_title(); ?></h3>
        </div>
-      <img src="images/kettlebell3.jpg" alt="">
     </div>
+
     <div class="container aboutContainer">
   
       <?php // Start the loop ?>
@@ -24,7 +30,6 @@
         </div> -->
 
         <div class="aboutContent">
-          <h2><?php the_title(); ?></h2>
           <?php the_content(); ?>
         </div>
 
