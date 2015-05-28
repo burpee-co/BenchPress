@@ -8,10 +8,12 @@ header.mainHeader {
 	width: 100%;
 	@include flexMom(row,wrap);
 	@include flexAlign(space-between,center);
-	background: rgba(0,0,0,0.7);
+	background: rgba(0,0,0,0.8);
 	position: fixed;
 	margin: 0 auto;
 	padding: 5px 20px;
+	box-shadow:$shadow;
+	outline: $outline;
 }
 
 header.mainHeader h1 {
