@@ -4,7 +4,7 @@
 		font-size: 35px;
 	}
 	h4{
-		@include fontStyle(30px,$green,400);
+		@include fontStyle(35px,$green,400);
 		text-transform: uppercase;
 	}
 }

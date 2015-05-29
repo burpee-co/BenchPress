@@ -9,14 +9,11 @@
   <div class="main">
     <div class="half-hero halfHeroAbout">
        <div class="overlay">
-           <h2>
-             <?php global $current_user;
-                  get_currentuserinfo();
-                  echo $current_user->user_firstname . "\n";
-                  echo $current_user->user_lastname . "\n";
-              ?> 
-           </h2>
-           <h3><?php the_title(); ?></h3>
+           <h2><?php the_title(); ?></h2>
+          <?php // Start the loop ?>
+          <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+           <h3><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></h3>
+           <?php endwhile; // end the loop?>
        </div>
     </div>
 
@@ -24,14 +21,6 @@
     
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-        <div class="aboutInnerContainer">
-          <div class="aboutAvatar">
-            <?php echo get_avatar( $post->post_author, 300 ); ?>
-          </div>
-          <div class="aboutMe">
-           <?php echo get_the_author_meta( 'description' ); ?> 
-           </div>
-        </div>
 
         <div class="aboutContent">
           <?php the_content(); ?>
