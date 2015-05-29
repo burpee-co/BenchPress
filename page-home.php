@@ -7,7 +7,8 @@
 get_header();  ?>
 
 <div class="main mainHome">
-
+	
+		<!-- Just making a change -->
 
 		<div class="hero">
 		 	<div class="overlay">
