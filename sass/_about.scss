@@ -3,16 +3,29 @@
 	h3 {
 		font-size: 35px;
 	}
-}
-
-.aboutImages {
-	background: tomato;
-	display: flex;
-	img {
-		max-width: 100%;
-		display: block;
+	h4{
+		@include fontStyle(30px,$green,400);
+		text-transform: uppercase;
 	}
 }
+
+.aboutInnerContainer {
+	margin: 50px 0;
+	margin-bottom: 10px;
+	@include flexMom(row, initial);
+	.aboutAvatar {
+		flex: 1 0 10px;
+		max-width: 100%;
+		img.avatar {
+			// border-radius: 50%;
+		}
+	}
+	.aboutMe {
+		flex: 1 0 500px;
+		// background: tomato;
+	}
+}
+
 
 .halfHeroAbout {
 	@include flexMom(column, wrap);
@@ -22,12 +35,16 @@
 	background-image: url(images/circuit1.jpg);
 	background-attachment: fixed;
 	overflow: hidden;
+	position: relative;
 	.overlay {
-		padding:30px;
-		padding-top: 5px;
-		margin-top: 340px;
+		padding:50px;
 		text-align: left;
 		background-color: rgba(0,0,0,0.8);
+		box-shadow:$shadow;
+		outline:$outline;
+		width: 100%;
+		position: absolute;
+		bottom: 0;
 		h2{
 			@include fontStyle(80px,$white,700);
 			margin: 10px;
@@ -37,9 +54,13 @@
 			margin: 10px;
 			@include fontStyle(40px,$green,400);
 			text-transform: capitalize;
-		}
+		}		
 	}
 }
 
-
+.clearfix {
+	@include flexMom(row, wrap);
+	justify-content: space-between;
+	align-items: stretch;
+}
 
