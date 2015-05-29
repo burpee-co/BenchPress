@@ -4,7 +4,7 @@ Footer
 ===============================
 */
 
-footer {
+.mainFooter {
     clear: both;
     background-color: $dg;
     color:$white;
@@ -14,6 +14,7 @@ footer {
         .footer-widget-container {
             padding:20px;
             flex:1 0 auto;
+            max-width: 33%;
             margin-right:20px;
             margin-top: 0px;
             h3.footer-widget-title { 

@@ -1,4 +1,4 @@
-<footer>
+<footer class="mainFooter">
   <div class="container">
   	<?php dynamic_sidebar('footer-widget-area'); ?>
   </div>

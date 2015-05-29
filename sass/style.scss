@@ -19,12 +19,18 @@
 @import '_home.scss';
 @import '_contact.scss';
 @import '_typography.scss';
+@import '_single.scss';
+@import '_widgets.scss';
 
 /*
 ====================================
 Global Classes / Wordpress Specific
 ====================================
 */
+
+html{
+	margin:0px;
+}
 
 .aligncenter {
 	text-align: center;
@@ -151,5 +157,14 @@ pre {
 	padding: 10px;
 	border-radius: 4px;
 	border: 1px solid #ccc;
+}
+
+.half-hero {
+	width:100%;
+	min-height:80vh;
+	background:#fff;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
 }
 

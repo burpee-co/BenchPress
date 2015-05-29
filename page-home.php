@@ -6,11 +6,14 @@
 
 get_header();  ?>
 
-<div class="main mainHome">
-	
-		<!-- Just making a change -->
+<?php global $post; ?>
+<?php
+$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
+?>
 
-		<div class="hero">
+<div class="main mainHome">
+
+		<div class="hero" style="background: url(<?php echo $src[0]; ?> ) !important; background-size: cover !important; background-attachment: fixed !important;">
 		 	<div class="overlay">
 		 		<h1><?php echo get_bloginfo ('title') ?></h1>
 		 		<h2><?php echo get_bloginfo ( 'description' ); ?></h2>

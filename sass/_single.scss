@@ -1,0 +1,26 @@
+/*
+===============================
+Single
+===============================
+*/
+
+.content {
+	padding:20px 0px;
+	img {
+		&.alignleft {
+			padding-right: 5px;
+			margin-right:20px;
+		}
+		&.alignright {
+			padding-left: 5px;
+			margin-left:20px;
+		}
+	}
+}
+
+
+
+figcaption {
+	@include fontStyle(12px,$dg,300);
+	text-align: center;
+}
