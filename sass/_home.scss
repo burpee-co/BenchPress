@@ -7,6 +7,8 @@ Home
 .mainHome {
 	.half-hero{
 		height:50vh;
+		-webkit-background-size: cover;
+		background-size: cover;
 		background-image: url(images/stretch1.jpg);
 		background-attachment: fixed;
 	}

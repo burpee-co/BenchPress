@@ -419,7 +419,50 @@ Footer
 ===============================
 */
 footer {
-  clear: both; }
+  clear: both;
+  background-color: #212121;
+  color: white; }
+  footer .container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -o-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -o-align-items: flex-start;
+    align-items: flex-start; }
+    footer .container .footer-widget-container {
+      padding: 20px;
+      flex: 1 0 auto;
+      margin-right: 20px;
+      margin-top: 0px; }
+      footer .container .footer-widget-container h3.footer-widget-title {
+        color: #0ca948; }
+      footer .container .footer-widget-container:last-child {
+        margin-right: 0px; }
+  footer p {
+    text-align: center;
+    background-color: black;
+    letter-spacing: 4px;
+    padding: 30px;
+    margin: 0 auto;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 300; }
 
 /*
 ===============================
@@ -456,16 +499,15 @@ footer {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
-  -webkit-flex-flow: row initial;
-  -moz-flex-flow: row initial;
-  -ms-flex-flow: row initial;
-  -o-flex-flow: row initial;
-  flex-flow: row initial; }
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap; }
   .aboutInnerContainer .aboutAvatar {
-    flex: 1 0 10px;
-    max-width: 100%; }
+    flex: 1 0 auto; }
   .aboutInnerContainer .aboutMe {
-    flex: 1 0 500px; }
+    flex: 1 0 auto; }
 
 .halfHeroAbout {
   display: -webkit-flex;
@@ -528,6 +570,8 @@ Home
 */
 .mainHome .half-hero {
   height: 50vh;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-image: url(images/stretch1.jpg);
   background-attachment: fixed; }
 
@@ -693,10 +737,12 @@ Global Classes / Wordpress Specific
   float: right; }
 
 img.alignleft {
-  padding-right: 5px; }
+  padding-right: 5px;
+  margin-right: 20px; }
 
 img.alignright {
-  padding-left: 5px; }
+  padding-left: 5px;
+  margin-left: 20px; }
 
 .clear {
   width: 100%;
@@ -717,7 +763,8 @@ body {
 
 .container {
   max-width: 1200px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 20px; }
 
 .content {
   float: left;

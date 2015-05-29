@@ -1,8 +1,8 @@
 <footer>
   <div class="container">
   	<?php dynamic_sidebar('footer-widget-area'); ?>
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
   </div>
+  <p>&copy; Burpee Co. <?php echo date('Y'); ?></p>
 </footer>
 
 <script>
