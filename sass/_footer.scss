@@ -5,6 +5,33 @@ Footer
 */
 
 footer {
-	clear: both;
+    clear: both;
+    background-color: $dg;
+    color:$white;
+    .container{
+        @include flexMom(row,wrap);
+        @include flexAlign(space-between, flex-start);
+        .footer-widget-container {
+            padding:20px;
+            flex:1 0 auto;
+            margin-right:20px;
+            margin-top: 0px;
+            h3.footer-widget-title { 
+                color:$green;
+            }
+            &:last-child {
+                margin-right:0px;
+            }
+        }
+    }
+    p {
+    	text-align: center;
+    	background-color: $black;
+			letter-spacing: 4px;
+			padding:30px;
+			margin:0 auto;
+			font-family: $mont;
+			text-transform: uppercase;
+    	@include fontStyle(20px,rgba(255,255,255,0.4),300);
+    }
 }
-
