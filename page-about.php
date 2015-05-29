@@ -21,13 +21,17 @@
     </div>
 
     <div class="container aboutContainer">
-  
+    
       <?php // Start the loop ?>
       <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-      
-<!--         <div class="aboutHeader">
-          <?php wp_get_attachment_image(); ?>
-        </div> -->
+        <div class="aboutInnerContainer">
+          <div class="aboutAvatar">
+            <?php echo get_avatar( $post->post_author, 300 ); ?>
+          </div>
+          <div class="aboutMe">
+           <?php echo get_the_author_meta( 'description' ); ?> 
+           </div>
+        </div>
 
         <div class="aboutContent">
           <?php the_content(); ?>

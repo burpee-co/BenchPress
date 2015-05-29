@@ -175,7 +175,8 @@ header.mainHeader {
   margin: 0 auto;
   padding: 5px 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  outline: 20px solid rgba(0, 0, 0, 0.2); }
+  outline: 20px solid rgba(0, 0, 0, 0.2);
+  z-index: 10000; }
 
 header.mainHeader h1 {
   flex: 1 0 40%;
@@ -441,13 +442,30 @@ footer {
   flex-flow: row wrap; }
   .aboutContainer h3 {
     font-size: 35px; }
+  .aboutContainer h4 {
+    font-size: 30px;
+    color: #0ca948;
+    font-weight: 400;
+    text-transform: uppercase; }
 
-.aboutImages {
-  background: tomato;
-  display: flex; }
-  .aboutImages img {
-    max-width: 100%;
-    display: block; }
+.aboutInnerContainer {
+  margin: 50px 0;
+  margin-bottom: 10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-flow: row initial;
+  -moz-flex-flow: row initial;
+  -ms-flex-flow: row initial;
+  -o-flex-flow: row initial;
+  flex-flow: row initial; }
+  .aboutInnerContainer .aboutAvatar {
+    flex: 1 0 10px;
+    max-width: 100%; }
+  .aboutInnerContainer .aboutMe {
+    flex: 1 0 500px; }
 
 .halfHeroAbout {
   display: -webkit-flex;
@@ -465,13 +483,17 @@ footer {
   background-size: cover;
   background-image: url(images/circuit1.jpg);
   background-attachment: fixed;
-  overflow: hidden; }
+  overflow: hidden;
+  position: relative; }
   .halfHeroAbout .overlay {
-    padding: 30px;
-    padding-top: 5px;
-    margin-top: 340px;
+    padding: 50px;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    outline: 20px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    position: absolute;
+    bottom: 0; }
     .halfHeroAbout .overlay h2 {
       font-size: 80px;
       color: white;
@@ -485,11 +507,30 @@ footer {
       font-weight: 400;
       text-transform: capitalize; }
 
+.clearfix {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  -moz-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  -o-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch; }
+
 /*
 ===============================
 Home
 ===============================
 */
+.mainHome .half-hero {
+  height: 50vh;
+  background-image: url(images/stretch1.jpg);
+  background-attachment: fixed; }
+
 .hero {
   display: -webkit-flex;
   display: -moz-flex;
@@ -505,7 +546,8 @@ Home
   height: 100vh;
   background-image: url(images/kettlebell2.jpg);
   -webkit-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   .hero .overlay {
     padding: 50px;
     text-align: center;
@@ -528,7 +570,8 @@ Home
       text-transform: capitalize; }
 
 .homeWidgets {
-  background-color: #0ca948; }
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px; }
   .homeWidgets .container {
     display: -webkit-flex;
     display: -moz-flex;
@@ -545,15 +588,22 @@ Home
     -ms-justify-content: center;
     -o-justify-content: center;
     justify-content: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center; }
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -o-align-items: flex-start;
+    align-items: flex-start; }
     .homeWidgets .container .home-widget-container {
       width: 100%;
-      background-color: white;
-      flex: 1 0 350px; }
+      flex: 1 0 350px;
+      margin-right: 20px;
+      padding: 20px;
+      color: #212121; }
+      .homeWidgets .container .home-widget-container h2 {
+        margin-top: 0; }
+      .homeWidgets .container .home-widget-container:last-child {
+        margin-right: 0px;
+        border-right: none; }
 
 body {
   font-family: "Raleway", Helvetica, Arial, sans-serif;
