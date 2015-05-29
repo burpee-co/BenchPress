@@ -23,12 +23,44 @@ h3 {
 	text-transform: uppercase;
 }
 
+h4 {
+	font-family: $rale;
+	@include fontStyle(28px,grey,300);
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+}
+
+h5 {
+	margin-top: 0;
+	padding-top: 0;
+	font-family: $rale;
+	@include fontStyle(28px,white,300);
+}
+
 /* links */
 
 a {
 	color: $green;
 	text-decoration: none;
 	transition: all 0.5s;
+}
+
+.emailFooter {
+	color:$white;
+	border-bottom: 2px dotted white;
+	transition: all 0.5s;
+	&:hover{
+		color:$lime;
+	}
+}
+
+.widget_calendar caption{
+	@include fontStyle(20px,$lime,300);
+	letter-spacing: 5px;
+	margin:10px;
+	font-family: $mont;
+	text-transform: uppercase;
 }
 
 /* paragraphs */
