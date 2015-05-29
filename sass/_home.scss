@@ -8,6 +8,9 @@ Home
 	.half-hero{
 		height:50vh;
 		background-image: url(images/stretch1.jpg);
+		background-repeat: no-repeat;
+		-webkit-background-size: 100vh;
+		background-size: 100vh;
 		background-attachment: fixed;
 	}
 }
