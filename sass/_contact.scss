@@ -1,0 +1,27 @@
+.container {
+	h3 {
+		text-transform: none;
+		// color: black;
+	}
+}
+
+.formContainer {
+	display: flex;
+	// justify-content: space-between;
+	background: tomato;
+	flex-flow: row wrap;
+	.formInputs {
+		background: lightBlue;
+		// width: 50%;
+		flex: 1 0 150px;
+		.wpcf7-form-control {
+			background: #F8F8F8;
+			border: none;
+			width: 100%;
+		}
+	}
+	.contactMaps {
+		flex: 1 0 100px;
+		// width: 50%;
+	}
+}
