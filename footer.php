@@ -1,5 +1,5 @@
 <footer>
-  <div class="container footerContainer">
+  <div class="container">
   	<?php dynamic_sidebar('footer-widget-area'); ?>
     <p>&copy; HackerYou <?php echo date('Y'); ?></p>
   </div>
