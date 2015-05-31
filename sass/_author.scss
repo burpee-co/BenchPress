@@ -1,0 +1,36 @@
+.authorSubHeader{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-bottom: 29px;
+	.authorAvatar {
+		display: flex;
+		flex: 1 0 auto;
+		img {
+			margin-top: 20px;
+			max-width: 100%;
+			display: block;
+		}
+	}
+	.authorInnerSubHeader {
+		flex: 1 0 600px;
+		display: flex;
+		flex-direction: column;
+			max-width: 100%;
+		h2.authorAbout {
+			color: rgba(0,0,0,0.8);
+			font-size: 50px;
+			font-weight: 800;
+			margin: 0;
+			padding: 10px;
+		}
+		.authorBio {
+			padding: 10px;
+		}
+	}
+}
+
+
+.post {
+	border-top: 5px dotted $lg;
+}
