@@ -1,17 +1,10 @@
 <?php get_header(); ?>
-<?php global $post; ?>
-<?php
-$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
-?>
 
 <!-- Tyn, just letting you know I'm editing some of the stuff here -->
 
 <div class="main">
-
-  <div class="half-hero halfHeroAbout" style="background: url(<?php echo $src[0]; ?> ) !important; background-size: cover !important; background-attachment: fixed !important;">
-     <div class="overlay">
-         <h2><?php the_title(); ?></h2>
-     </div>
+  <div class="authorHeader">
+   <h1><?php the_author_meta('first_name'); ?> <?php the_author_meta('last_name'); ?></h1>
   </div>
   <div class="container">
     <div class="content">
@@ -24,12 +17,6 @@ $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 560
       	if ( have_posts() )
       		the_post();
       ?>
-
-      <h1>Author Archives:
-        <a class="name" href="<?php echo get_author_posts_url( get_the_author_meta('ID') ); ?>">
-          <?php the_author(); ?>
-        </a>
-      </h1>
 
       <?php
       	// If a user has filled out their description, show a bio on their entries.
