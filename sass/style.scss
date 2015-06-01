@@ -20,6 +20,8 @@
 @import '_contact.scss';
 @import '_typography.scss';
 @import '_single.scss';
+@import '_widgets.scss';
+@import '_author.scss';
 
 /*
 ====================================
@@ -86,10 +88,6 @@ body {
 	float: left;
 	width: 65%;
 	margin-right: 5%;
-	@media ( max-width:900px ) {
-		width:100%;
-		// border:2px solid hotpink;
-	}
 }
 
 .full {

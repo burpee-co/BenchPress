@@ -46,6 +46,11 @@ form#searchform {
 Widgets
 ===============================
 */
+.content {
+	@media ( max-width:900px ) {
+		width:100%;
+	}
+}
 
 .rpwe-thumb{
 	border: none;
@@ -65,3 +70,4 @@ figure {
 			margin-bottom: 10px;
 		}
 }
+
