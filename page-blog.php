@@ -1,5 +1,10 @@
-<?php //index.php is the last resort template, if no other templates match ?>
-<?php get_header(); ?>
+<?php
+
+/*
+	Template Name: Blog Page
+*/
+
+get_header();  ?>
 <?php global $post; ?>
 <?php
 $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 5600,1000 ), false, '' );
