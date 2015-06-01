@@ -9,7 +9,7 @@ $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 560
 
   <div class="half-hero halfHeroAbout" style="background: url(<?php echo $src[0]; ?> ) !important; background-size: cover !important; background-attachment: fixed !important;">
      <div class="overlay">
-         <h2><?php echo get_the_title($post->post_parent); ?></h2>
+         <h2>BLOG</h2>
      </div>
   </div>
   <div class="container">

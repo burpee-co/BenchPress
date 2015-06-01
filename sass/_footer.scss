@@ -14,7 +14,6 @@ Footer
         .footer-widget-container {
             padding:20px;
             flex:1 0 auto;
-            max-width: 33%;
             margin-right:20px;
             margin-top: 0px;
             h3.footer-widget-title { 
@@ -22,6 +21,9 @@ Footer
             }
             &:last-child {
                 margin-right:0px;
+            }
+            @media (max-width:900px) {
+                flex:1 0 100%;
             }
         }
     }

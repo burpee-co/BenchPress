@@ -22,22 +22,33 @@ header.mainHeader h1 {
 	margin: 0 auto;
 	padding: 0px 20px;
 	line-height: 60px;
+	@media (max-width:730px) {
+		flex: 1 0 100%;
+		text-align: center;
+	}	
 }
 
 ul.menu {
-	flex: 1 0 auto;
+	text-align: center;
+	flex:1 0 auto;
 	@include flexMom(row,wrap);
 	@include flexAlign(flex-end,center);
-	margin: 0;
+	margin: auto;
 	padding: 0;
 	li {
 		display: inline;
 		margin-right: 10px;
+		text-align: center;
 		a {
-			color: #333;
 			padding: 10px;
 			color: white;
 		}
 	}
+	@media (max-width:730px) {
+		flex: 1 0 100%;
+		text-align: center;
+		@include flexAlign(space-around,center);
+		padding:10px;
+	}	
 }
 
