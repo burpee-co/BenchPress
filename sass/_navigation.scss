@@ -13,7 +13,7 @@ header.mainHeader {
 	margin: 0 auto;
 	padding: 5px 20px;
 	box-shadow:$shadow;
-	outline: $outline;
+	// outline: $outline;
 	z-index:10000;
 	@media (max-width:730px) {
 		padding:0px;
@@ -45,6 +45,11 @@ ul.menu {
 		a {
 			padding: 10px;
 			color: white;
+			transition: all 0.3s;
+			&:hover {
+				background-color: $green;
+				// color:black;
+			}
 		}
 	}
 	@media (max-width:730px) {
