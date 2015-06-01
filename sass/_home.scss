@@ -33,7 +33,7 @@ Home
 		h1{
 			@include fontStyle(80px,$white,700);
 			margin: 10px;
-			@media (max-width:730px) {
+			@media (max-width:900px) {
 				@include fontStyle(50px,$white,700);
 			}	
 		}
