@@ -87,6 +87,9 @@ body {
 	float: left;
 	width: 65%;
 	margin-right: 5%;
+	@media ( max-width:900px ) {
+		width:100%;
+	}
 }
 
 .full {
@@ -163,8 +166,19 @@ pre {
 	width:100%;
 	min-height:80vh;
 	background:#fff;
+	background-image: url(images/kettlebell2.jpg);
 	background-attachment: fixed;
 	background-size: cover;
 	position: relative;
+	.overlay {
+		@media (max-width:730px) {
+			padding:20px;
+		}
+		h2 {
+			@media (max-width:730px) {
+				@include fontStyle(30px,$white,400);
+				padding:0px;
+			}
+		}
 }
-
+}
