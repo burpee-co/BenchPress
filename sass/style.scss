@@ -21,6 +21,7 @@
 @import '_typography.scss';
 @import '_single.scss';
 @import '_widgets.scss';
+@import '_author.scss';
 
 /*
 ====================================
@@ -77,10 +78,16 @@ body {
 	background-color: $white;
 }
 
+.main {}
+
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 	padding:0 20px;
+}
+
+.no-header {
+	padding-top:100px;
 }
 
 .content {
